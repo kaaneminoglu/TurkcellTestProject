@@ -19,7 +19,7 @@ public class WebElementHelper {
         TimeUnit.SECONDS.sleep(3);
         try {
             List<WebElement> elements = BasePage.driver.findElements(By.xpath("//div[@id='all-devices-section']/div"));
-            for (int i = 3; i < elements.size(); i++) {
+            for (int i = 0; i < elements.size(); i++) {
                 elements = BasePage.driver.findElements(By.xpath("//div[@id='all-devices-section']/div"));
                 elements.get(i).click();
                 TimeUnit.SECONDS.sleep(2);
